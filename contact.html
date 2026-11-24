@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">GB.Dev</div>
+        <div class="nav-links">
+            <a href="index.html">Trang chủ</a>
+            <a href="projects.html">Dự án</a>
+            <a href="contact.html">Liên hệ</a>
+            <button id="theme-toggle" aria-label="Đổi chế độ sáng tối">🌙</button>
+        </div>
+    </nav>
+
+    <section class="reveal">
+        <h2>Liên hệ với mình</h2>
+        <!-- Thay YOUR_FORM_ID bằng mã Formspree của bạn tại https://formspree.io -->
+        <form action="https://formspree.io/f/mjywpdkz" method="POST" class="card contact-form">
+            <label>Họ và tên</label>
+            <input type="text" name="name" placeholder="Nhập tên của bạn..." required>
+
+            <label>Email</label>
+            <input type="email" name="email" placeholder="email@example.com" required>
+
+            <label>Lời nhắn</label>
+            <textarea name="message" rows="5" placeholder="Nhập nội dung liên hệ..." required></textarea>
+
+            <button type="submit" class="btn">Gửi tin nhắn</button>
+        </form>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
